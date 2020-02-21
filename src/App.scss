@@ -1,0 +1,33 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(#0099F3 0%, #15B4FF 30%, #AED4EC 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .diag {
+    height: 500px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0px black;
+    background-color: aliceblue;
+
+    .title {
+      font-weight: bold;
+      font-size: 5em;
+    }
+
+    .addTodo {
+      width: calc(100% - 50px);
+    }
+  }
+
+  @media only screen and (min-height: 625px) {
+    .diag {height: 80vh}
+  }
+
+  @media only screen and (min-height: 1333px) {
+    .diag {width: 30vh}
+  }
+}
